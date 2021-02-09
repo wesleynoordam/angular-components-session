@@ -1,0 +1,10 @@
+<div class="mainDiv">
+    <h1>TODO list</h1>
+    <button mat-raised-button color="primary" (click)="toggleAddItemVisible()">Add item</button>
+
+    <div class="addItemWrapper">
+        <app-todo-list-add-item *ngIf="addItemVisible" (addTask)="addTask($event)"></app-todo-list-add-item>
+    </div>
+
+    <app-todo-list></app-todo-list>
+</div>

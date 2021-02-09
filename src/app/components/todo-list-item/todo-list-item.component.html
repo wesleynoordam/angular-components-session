@@ -1,0 +1,4 @@
+<app-border-wrapper>
+    <span [class.strikethrough]="todoItem.completed">{{todoItem.task}}</span>
+    <mat-checkbox class="todo-item-checkbox" [(ngModel)]="todoItem.completed"></mat-checkbox>
+</app-border-wrapper>

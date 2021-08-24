@@ -1,0 +1,11 @@
+<div style="background-color: coral;">
+    <ng-container *ngTemplateOutlet="topTemplate"></ng-container>
+</div>
+
+<div style="background-color: aqua;">
+    <!-- Built-in directive NgFor is used. Some other well known are 'NgIf', 'NgSwitch', 'NgClass', 'NgStyle' and 'NgModel' -->
+    <!-- See https://angular.io/guide/built-in-directives#built-in-directives for more information. -->
+    <div *ngFor="let t of stringList">
+        <ng-container *ngTemplateOutlet="bottomTemplate; context: { $implicit: t }"></ng-container>
+    </div>
+</div>

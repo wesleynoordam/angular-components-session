@@ -7,4 +7,17 @@
     </div>
 
     <app-todo-list></app-todo-list>
+
+    <br/>
+    <br/>
+    <br/>
+
+    <app-template-demo [topTemplate]="top" [bottomTemplate]="bottom" [stringList]="stringList">
+        <ng-template #top>
+            <span>Top part</span>
+        </ng-template>
+        <ng-template #bottom let-text>
+            <span style="color: blue;">{{text}}</span>
+        </ng-template>
+    </app-template-demo>
 </div>

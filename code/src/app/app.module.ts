@@ -12,6 +12,7 @@ import { TodoListAddItemComponent } from './components/todo-list-add-item/todo-l
 import { TodoListItemComponent } from './components/todo-list-item/todo-list-item.component';
 import { BorderWrapperComponent } from './components/border-wrapper/border-wrapper.component';
 import { TodoService } from './services/todo.service';
+import { TemplateDemoComponent } from './components/template-demo/template-demo.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TodoService } from './services/todo.service';
     TodoListComponent,
     TodoListAddItemComponent,
     TodoListItemComponent,
-    BorderWrapperComponent
+    BorderWrapperComponent,
+    TemplateDemoComponent
   ],
   imports: [
     BrowserModule,

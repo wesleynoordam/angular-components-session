@@ -8,6 +8,13 @@ import { TodoListComponent } from 'src/app/components/todo-list/todo-list.compon
 })
 export class TodoPageComponent {
   addItemVisible = false;
+  stringList: string[] = [
+    'Test1',
+    'Test2',
+    'Test3',
+    'Test4',
+    'Test5'
+  ];
 
   @ViewChild(TodoListComponent, {static: true}) todoList!: TodoListComponent;
 
